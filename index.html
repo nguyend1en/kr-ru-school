@@ -5,198 +5,310 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Главная — Онлайн-школа «Слово»</title>
   <meta name="description" content="Онлайн-школа русского языка для иностранных студентов: курсы от A1 до подготовки к ТРКИ и учёбе в вузе.">
+  <meta name="theme-color" content="#1f3b8c">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Golos+Text:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
     rel="stylesheet"
   >
   <link rel="stylesheet" href="css/custom.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script defer src="js/data.js"></script>
+  <script defer src="js/main.js"></script>
 </head>
 <body>
-  <header class="bg-primary text-white py-4">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-12 col-md-8">
-          <h1 class="h3 mb-1">Онлайн-школа «Слово»</h1>
-          <p class="mb-0 opacity-75">Русский язык для иностранных студентов</p>
-        </div>
-        <div class="col-12 col-md-4 text-md-end mt-3 mt-md-0">
-          <span class="badge bg-light text-primary">КР №2</span>
+  <a class="skip-link" href="#main">Перейти к основному содержимому</a>
+
+  <header class="site-header sticky-top">
+    <nav class="navbar navbar-expand-lg" aria-label="Основная навигация">
+      <div class="container">
+        <a class="navbar-brand brand" href="index.html">
+          <span class="brand__mark" aria-hidden="true">С</span>
+          <span class="brand__text"><span class="brand__name">Сло́во</span><span class="brand__sub">онлайн-школа русского языка</span></span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar"
+          aria-expanded="false"
+          aria-label="Открыть меню"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Главная</a></li>
+            <li class="nav-item dropdown">
+              <button
+                class="nav-link dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Курсы
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="catalog.html">Все курсы</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="product.html?id=a1">Русский с нуля (A1)</a></li>
+                <li><a class="dropdown-item" href="product.html?id=a2">Базовый уровень (A2)</a></li>
+                <li><a class="dropdown-item" href="product.html?id=b1">Подготовка к ТРКИ-1 (B1)</a></li>
+                <li><a class="dropdown-item" href="product.html?id=b2">Русский для учёбы в вузе (B2)</a></li>
+                <li><a class="dropdown-item" href="product.html?id=club">Разговорный клуб</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="test.html">Тест на уровень</a></li>
+            <li class="nav-item"><a class="nav-link" href="teachers.html">Преподаватели</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+            <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+              <a class="btn btn-primary w-100" href="order.html">Записаться</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
+    </nav>
   </header>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">Слово</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#mainNavbar"
-        aria-controls="mainNavbar"
-        aria-expanded="false"
-        aria-label="Переключить навигацию"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="mainNavbar">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Главная</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="catalog.html">Курсы</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="product.html">Курс A1</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="order.html">Запись</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="test.html">Тест на уровень</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="teachers.html">Преподаватели</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Дополнительно
-            </a>
-            <ul class="dropdown-menu dropdown-menu-end">
-              <li><a class="dropdown-item" href="catalog.html">Все курсы</a></li>
-              <li><a class="dropdown-item" href="order.html">Записаться на курс</a></li>
-              <li><a class="dropdown-item" href="index.html#popular">Популярные курсы</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="product.html#faq">Частые вопросы</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
 
-  <main>
-    <section class="container my-5">
-      <div class="row align-items-center g-4">
-        <div class="col-12 col-lg-6">
-          <h2 class="display-5 fw-bold">Русский язык для учёбы и жизни в России</h2>
-          <p class="lead text-muted">
-            Занятия в мини-группах до 8 человек с преподавателями РКИ.
-            Курсы от уровня A1 до подготовки к ТРКИ и учёбе в российском вузе.
-          </p>
-          <a class="btn btn-primary btn-lg" href="catalog.html">Выбрать курс</a>
-        </div>
-        <div class="col-12 col-lg-6">
-          <div class="p-4 bg-light border rounded">
-            <h3 class="h5">Ближайшие старты групп</h3>
-            <ul class="list-unstyled mb-0">
-              <li class="py-2 border-bottom"><strong>10 ноября</strong> — Русский с нуля (A1)</li>
-              <li class="py-2 border-bottom"><strong>17 ноября</strong> — Подготовка к ТРКИ-1 (B1)</li>
-              <li class="py-2"><strong>1 декабря</strong> — Русский для учёбы в вузе (B2)</li>
-            </ul>
+  <main id="main" tabindex="-1">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__inner">
+        <div class="row align-items-center g-5">
+          <div class="col-12 col-lg-7">
+            <h1 class="hero__title" id="hero-title">Говори́те по‑ру́сски уве́ренно</h1>
+            <p class="hero__lead">
+              Онлайн-школа русского языка для иностранных студентов. Мини-группы до 8 человек,
+              преподаватели РКИ и курсы от алфавита до экзамена ТРКИ и учёбы в российском вузе.
+            </p>
+            <div class="d-flex flex-wrap gap-2">
+              <a class="btn btn-primary btn-lg" href="catalog.html">Выбрать курс</a>
+              <a class="btn btn-outline-primary btn-lg" href="test.html">Пройти тест на уровень</a>
+            </div>
+          </div>
+          <div class="col-12 col-lg-5">
+            <figure class="correction" aria-labelledby="correction-caption">
+              <p class="correction__line">Я живу́ в <span class="correction__pair"><span class="correction__wrong">Москва</span><span class="correction__fix" aria-hidden="true">Москве́</span></span></p>
+              <p class="correction__line">Я учу́сь в <span class="correction__pair"><span class="correction__wrong">университет</span><span class="correction__fix" aria-hidden="true">университе́те</span></span></p>
+              <p class="correction__line">Мне нра́вится ру́сский язы́к.<span class="correction__ok" aria-hidden="true">✓</span></p>
+              <figcaption class="correction__note" id="correction-caption">
+                Предложный падеж — 5-я неделя курса A1. Ошибки исправляем вместе.
+                <span class="visually-hidden">Правильно: «Я живу в Москве», «Я учусь в университете».</span>
+              </figcaption>
+            </figure>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="container my-5">
-      <h2 class="text-center mb-4">Почему выбирают нашу школу</h2>
-      <div class="row g-4">
-        <div class="col-12 col-md-4">
-          <div class="p-4 border rounded h-100 bg-white">
-            <h3 class="h5">Мини-группы</h3>
-            <p class="mb-0 text-muted">В группе не больше 8 студентов, поэтому каждый говорит на каждом занятии.</p>
-          </div>
+    <section class="container section" aria-labelledby="starts-title">
+      <div class="row g-5">
+        <div class="col-12 col-lg-7">
+          <h2 class="section__title" id="starts-title">Ближайшие старты</h2>
+          <table class="timetable">
+            <caption class="visually-hidden">Ближайшие старты групп</caption>
+            <thead>
+              <tr><th scope="col">Дата</th><th scope="col">Курс</th><th scope="col">Время (МСК)</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>10 ноября</td><td><a href="product.html?id=a1">Русский с нуля, A1</a></td><td>вт, чт 18:30</td></tr>
+              <tr><td>17 ноября</td><td><a href="product.html?id=b1">Подготовка к ТРКИ-1, B1</a></td><td>пн, ср, пт 19:00</td></tr>
+              <tr><td>24 ноября</td><td><a href="product.html?id=a2">Базовый уровень, A2</a></td><td>пн, ср 18:30</td></tr>
+              <tr><td>1 декабря</td><td><a href="product.html?id=b2">Русский для учёбы в вузе, B2</a></td><td>вт, чт 19:00</td></tr>
+            </tbody>
+          </table>
         </div>
-        <div class="col-12 col-md-4">
-          <div class="p-4 border rounded h-100 bg-white">
-            <h3 class="h5">Преподаватели РКИ</h3>
-            <p class="mb-0 text-muted">Все преподаватели — специалисты по русскому как иностранному с опытом работы в вузе.</p>
-          </div>
-        </div>
-        <div class="col-12 col-md-4">
-          <div class="p-4 border rounded h-100 bg-white">
-            <h3 class="h5">Тест на уровень</h3>
-            <p class="mb-0 text-muted">Перед началом обучения бесплатный тест и короткое собеседование, чтобы подобрать группу.</p>
-          </div>
+        <div class="col-12 col-lg-5">
+          <aside class="memo" aria-labelledby="memo-title">
+            <h2 class="memo__title" id="memo-title">Сейчас в каталоге</h2>
+            <!-- Текст ниже заполняет main.js через textContent (КР4) -->
+            <p class="memo__text" id="js-message" aria-live="polite">Загружаем данные о курсах…</p>
+            <a href="catalog.html">Открыть каталог</a>
+          </aside>
         </div>
       </div>
     </section>
 
-    <section class="container my-5" id="popular">
-      <div class="d-flex justify-content-between align-items-center mb-4">
-        <h2 class="mb-0">Популярные курсы</h2>
-        <a class="btn btn-outline-primary" href="catalog.html">Все курсы</a>
+    <section class="container section" aria-labelledby="why-title">
+      <h2 class="section__title" id="why-title">Как мы учим</h2>
+      <ul class="why list-unstyled row g-4 mb-0">
+        <li class="col-12 col-md-6 col-lg-3">
+          <h3 class="why__title">До 8 человек в группе</h3>
+          <p>Каждый говорит на каждом занятии, преподаватель слышит и исправляет ошибки сразу.</p>
+        </li>
+        <li class="col-12 col-md-6 col-lg-3">
+          <h3 class="why__title">Ударе́ния в материа́лах</h3>
+          <p>Во всех текстах и карточках стоят ударения — как в учебниках РКИ.</p>
+        </li>
+        <li class="col-12 col-md-6 col-lg-3">
+          <h3 class="why__title">Преподаватели РКИ</h3>
+          <p>Специалисты по русскому как иностранному с опытом работы в вузе.</p>
+        </li>
+        <li class="col-12 col-md-6 col-lg-3">
+          <h3 class="why__title">Объясняем на вашем языке</h3>
+          <p>На уровне A1–A2 сложное правило можно разобрать на английском или китайском.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="container section" id="popular" aria-labelledby="popular-title">
+      <div class="d-flex flex-wrap justify-content-between align-items-baseline gap-2 mb-4">
+        <h2 class="section__title mb-0" id="popular-title">Популярные курсы</h2>
+        <a href="catalog.html">Все курсы</a>
       </div>
       <div class="row g-4">
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="border rounded h-100 p-4">
-            <span class="badge bg-success mb-3">Набор открыт</span>
-            <h3 class="h5">Русский с нуля (A1)</h3>
-            <p class="text-muted">Алфавит, произношение, базовая грамматика и фразы для повседневной жизни в России.</p>
-            <p class="fw-bold mb-3">6 500 руб./мес.</p>
-            <a class="btn btn-primary" href="product.html">Подробнее</a>
-          </div>
+        <div class="col-12 col-md-6 col-lg-4" data-group="beginner">
+          <article class="card course-card h-100" data-course-id="a1">
+            <picture>
+              <source type="image/webp" srcset="images/courses/a1-480.webp 480w, images/courses/a1-960.webp 960w" sizes="(min-width: 992px) 360px, (min-width: 768px) 50vw, 100vw">
+              <img class="card-img-top" src="images/courses/a1-480.jpg" srcset="images/courses/a1-480.jpg 480w, images/courses/a1-960.jpg 960w" sizes="(min-width: 992px) 360px, (min-width: 768px) 50vw, 100vw" width="480" height="300" loading="lazy" alt="">
+            </picture>
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-center small mb-2">
+                <span class="fw-bold text-primary">Уровень A1</span>
+                <span class="text-body-secondary">12 недель</span>
+              </div>
+              <div class="d-flex flex-wrap justify-content-between align-items-start gap-2 mb-2">
+                <h3 class="card-title h5 mb-0">Русский с нуля</h3>
+                <span class="badge text-bg-warning" data-role="status">Последние места</span>
+              </div>
+              <p class="card-text text-body-secondary" data-role="description">Алфавит, произношение, базовая грамматика и фразы для повседневной жизни в России.</p>
+              <p class="course-card__price mt-auto mb-3"><span data-role="price">6 500 ₽</span> <s class="course-card__old d-none" data-role="old-price"></s> <span class="course-card__unit">/ мес.</span></p>
+              <div class="d-flex flex-wrap gap-2">
+                <a class="btn btn-primary" href="product.html?id=a1">Подробнее<span class="visually-hidden"> о курсе «Русский с нуля»</span></a>
+                
+              </div>
+            </div>
+          </article>
         </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="border rounded h-100 p-4">
-            <span class="badge bg-warning text-dark mb-3">Популярный</span>
-            <h3 class="h5">Базовый уровень (A2)</h3>
-            <p class="text-muted">Падежи, глаголы движения, общение в магазине, банке, поликлинике и общежитии.</p>
-            <p class="fw-bold mb-3">6 500 руб./мес.</p>
-            <a class="btn btn-primary" href="product.html">Подробнее</a>
-          </div>
+        <div class="col-12 col-md-6 col-lg-4" data-group="beginner">
+          <article class="card course-card h-100" data-course-id="a2">
+            <picture>
+              <source type="image/webp" srcset="images/courses/a2-480.webp 480w, images/courses/a2-960.webp 960w" sizes="(min-width: 992px) 360px, (min-width: 768px) 50vw, 100vw">
+              <img class="card-img-top" src="images/courses/a2-480.jpg" srcset="images/courses/a2-480.jpg 480w, images/courses/a2-960.jpg 960w" sizes="(min-width: 992px) 360px, (min-width: 768px) 50vw, 100vw" width="480" height="300" loading="lazy" alt="">
+            </picture>
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-center small mb-2">
+                <span class="fw-bold text-primary">Уровень A2</span>
+                <span class="text-body-secondary">12 недель</span>
+              </div>
+              <div class="d-flex flex-wrap justify-content-between align-items-start gap-2 mb-2">
+                <h3 class="card-title h5 mb-0">Базовый уровень</h3>
+                <span class="badge text-bg-success" data-role="status">Набор открыт</span>
+              </div>
+              <p class="card-text text-body-secondary" data-role="description">Падежи, глаголы движения, общение в магазине, банке, поликлинике и общежитии.</p>
+              <p class="course-card__price mt-auto mb-3"><span data-role="price">6 500 ₽</span> <s class="course-card__old d-none" data-role="old-price"></s> <span class="course-card__unit">/ мес.</span></p>
+              <div class="d-flex flex-wrap gap-2">
+                <a class="btn btn-primary" href="product.html?id=a2">Подробнее<span class="visually-hidden"> о курсе «Базовый уровень»</span></a>
+                
+              </div>
+            </div>
+          </article>
         </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="border rounded h-100 p-4">
-            <span class="badge bg-danger mb-3">Скидка 10%</span>
-            <h3 class="h5">Подготовка к ТРКИ-1 (B1)</h3>
-            <p class="text-muted">Разбор всех частей экзамена, пробные тесты и работа с типичными ошибками.</p>
-            <p class="fw-bold mb-3">7 900 руб./мес.</p>
-            <a class="btn btn-primary" href="product.html">Подробнее</a>
-          </div>
+        <div class="col-12 col-md-6 col-lg-4" data-group="intermediate">
+          <article class="card course-card h-100" data-course-id="b1">
+            <picture>
+              <source type="image/webp" srcset="images/courses/b1-480.webp 480w, images/courses/b1-960.webp 960w" sizes="(min-width: 992px) 360px, (min-width: 768px) 50vw, 100vw">
+              <img class="card-img-top" src="images/courses/b1-480.jpg" srcset="images/courses/b1-480.jpg 480w, images/courses/b1-960.jpg 960w" sizes="(min-width: 992px) 360px, (min-width: 768px) 50vw, 100vw" width="480" height="300" loading="lazy" alt="">
+            </picture>
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-center small mb-2">
+                <span class="fw-bold text-primary">Уровень B1</span>
+                <span class="text-body-secondary">10 недель</span>
+              </div>
+              <div class="d-flex flex-wrap justify-content-between align-items-start gap-2 mb-2">
+                <h3 class="card-title h5 mb-0">Подготовка к ТРКИ-1</h3>
+                <span class="badge text-bg-warning" data-role="status">Последние места</span>
+              </div>
+              <p class="card-text text-body-secondary" data-role="description">Разбор всех частей экзамена, пробные тесты и работа с типичными ошибками.</p>
+              <p class="course-card__price mt-auto mb-3"><span data-role="price">7 110 ₽</span> <s class="course-card__old" data-role="old-price">7 900 ₽</s> <span class="course-card__unit">/ мес.</span></p>
+              <div class="d-flex flex-wrap gap-2">
+                <a class="btn btn-primary" href="product.html?id=b1">Подробнее<span class="visually-hidden"> о курсе «Подготовка к ТРКИ-1»</span></a>
+                
+              </div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="container-fluid bg-light border-top border-bottom py-5">
+    <section class="container section" aria-labelledby="steps-title">
+      <h2 class="section__title" id="steps-title">Как начать</h2>
+      <ol class="steps row g-4 mb-0">
+        <li class="col-12 col-md-4"><h3 class="steps__title">Пройдите тест</h3><p>20 вопросов онлайн, около 10 минут. Результат и рекомендация курса — сразу.</p></li>
+        <li class="col-12 col-md-4"><h3 class="steps__title">Оставьте заявку</h3><p>Куратор ответит в течение рабочего дня и подберёт группу по времени.</p></li>
+        <li class="col-12 col-md-4"><h3 class="steps__title">Приходите на урок</h3><p>Первое занятие в разговорном клубе бесплатное.</p></li>
+      </ol>
+    </section>
+
+    <section class="band" aria-labelledby="band-title">
       <div class="container">
         <div class="row align-items-center g-3">
           <div class="col-12 col-md-8">
-            <h2 class="h4 mb-1">Не знаете свой уровень?</h2>
-            <p class="mb-0 text-muted">Пройдите бесплатный тест и короткое собеседование — мы подберём подходящую группу.</p>
+            <h2 class="band__title" id="band-title">Не знаете свой уровень?</h2>
+            <p class="mb-0">Тест покажет примерный уровень от A1 до B2 и разберёт каждую ошибку.</p>
           </div>
           <div class="col-12 col-md-4 text-md-end">
-            <a class="btn btn-primary" href="test.html">Пройти тест онлайн</a>
+            <a class="btn btn-light btn-lg" href="test.html">Начать тест</a>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="bg-dark text-white py-4 mt-5">
+  <footer class="site-footer">
     <div class="container">
-      <div class="row align-items-center g-3">
-        <div class="col-12 col-md-6">
-          <p class="mb-0">&copy; 2026 Онлайн-школа «Слово». Учебный проект.</p>
+      <div class="row g-4 py-5">
+        <div class="col-12 col-lg-4">
+          <a class="brand brand--light text-decoration-none mb-3" href="index.html">
+            <span class="brand__mark" aria-hidden="true">С</span>
+            <span class="brand__text"><span class="brand__name">Сло́во</span><span class="brand__sub">онлайн-школа русского языка</span></span>
+          </a>
+          <p class="site-footer__text mb-3">
+            Русский язык для иностранных студентов: от алфавита до ТРКИ и учёбы в российском вузе.
+            Мини-группы до 8 человек и преподаватели РКИ.
+          </p>
+          <ul class="list-unstyled mb-0 site-footer__list">
+            <li><a href="https://t.me/" target="_blank" rel="noopener">Telegram<span class="visually-hidden"> (откроется в новой вкладке)</span></a></li>
+            <li><a href="https://vk.com/" target="_blank" rel="noopener">ВКонтакте<span class="visually-hidden"> (откроется в новой вкладке)</span></a></li>
+          </ul>
         </div>
-        <div class="col-12 col-md-6 text-md-end">
-          <a class="text-white text-decoration-none me-3" href="catalog.html">Курсы</a>
-          <a class="text-white text-decoration-none" href="order.html">Запись</a>
+        <nav class="col-6 col-lg-2" aria-label="Обучение">
+          <h2 class="site-footer__title">Обучение</h2>
+          <ul class="list-unstyled site-footer__list">
+            <li><a href="catalog.html">Все курсы</a></li>
+            <li><a href="product.html?id=a1">Русский с нуля</a></li>
+            <li><a href="product.html?id=b1">Подготовка к ТРКИ</a></li>
+            <li><a href="product.html?id=club">Разговорный клуб</a></li>
+          </ul>
+        </nav>
+        <nav class="col-6 col-lg-2" aria-label="О школе">
+          <h2 class="site-footer__title">Школа</h2>
+          <ul class="list-unstyled site-footer__list">
+            <li><a href="teachers.html">Преподаватели</a></li>
+            <li><a href="test.html">Тест на уровень</a></li>
+            <li><a href="order.html">Запись на курс</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="col-12 col-lg-4">
+          <h2 class="site-footer__title">Контакты</h2>
+          <address class="site-footer__list mb-0">
+            <p class="mb-2">г. Москва, Учебный переулок, д. 12, офис 305<br><span class="site-footer__muted">м. Пушкинская, 7 минут пешком</span></p>
+            <p class="mb-2"><a href="tel:+74950001234">+7 (495) 000-12-34</a></p>
+            <p class="mb-2"><a href="mailto:hello@slovo-school.example">hello@slovo-school.example</a></p>
+            <p class="mb-0 site-footer__muted">Пн–Пт 10:00–20:00, Сб 11:00–16:00</p>
+          </address>
         </div>
+      </div>
+      <div class="site-footer__bottom d-flex flex-column flex-md-row justify-content-between gap-2 py-3">
+        <p class="mb-0">&copy; 2026 Онлайн-школа «Слово». Учебный проект, Нгуен Динь Зьен, ЭФБО-07-25.</p>
+        <p class="mb-0 site-footer__muted">Адрес, телефон и почта условные.</p>
       </div>
     </div>
   </footer>
-
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
-  </script>
 </body>
 </html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты — Онлайн-школа «Слово»</title>
+  <meta name="description" content="Контакты онлайн-школы «Слово»: адрес офиса на карте, телефон, e-mail, часы работы и форма обратной связи.">
+  <meta name="theme-color" content="#1f3b8c">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Golos+Text:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="css/custom.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script defer src="js/data.js"></script>
+  <script defer src="js/main.js"></script>
+  <script defer src="js/map.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к основному содержимому</a>
+
+  <header class="site-header sticky-top">
+    <nav class="navbar navbar-expand-lg" aria-label="Основная навигация">
+      <div class="container">
+        <a class="navbar-brand brand" href="index.html">
+          <span class="brand__mark" aria-hidden="true">С</span>
+          <span class="brand__text"><span class="brand__name">Сло́во</span><span class="brand__sub">онлайн-школа русского языка</span></span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar"
+          aria-expanded="false"
+          aria-label="Открыть меню"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+            <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+            <li class="nav-item dropdown">
+              <button
+                class="nav-link dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Курсы
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="catalog.html">Все курсы</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="product.html?id=a1">Русский с нуля (A1)</a></li>
+                <li><a class="dropdown-item" href="product.html?id=a2">Базовый уровень (A2)</a></li>
+                <li><a class="dropdown-item" href="product.html?id=b1">Подготовка к ТРКИ-1 (B1)</a></li>
+                <li><a class="dropdown-item" href="product.html?id=b2">Русский для учёбы в вузе (B2)</a></li>
+                <li><a class="dropdown-item" href="product.html?id=club">Разговорный клуб</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="test.html">Тест на уровень</a></li>
+            <li class="nav-item"><a class="nav-link" href="teachers.html">Преподаватели</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="contacts.html">Контакты</a></li>
+            <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+              <a class="btn btn-primary w-100" href="order.html">Записаться</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" tabindex="-1" class="container">
+    <section class="page-head">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Контакты</li>
+        </ol>
+      </nav>
+      <h1>Контакты</h1>
+      <p class="lead text-muted mb-0">Занятия проходят онлайн, а в офисе можно пройти тест на уровень, получить консультацию и забрать сертификат.</p>
+    </section>
+
+    <section class="mt-4" aria-labelledby="contacts-info-title">
+      <h2 class="visually-hidden" id="contacts-info-title">Как с нами связаться</h2>
+      <div class="row g-3">
+        <div class="col-12 col-sm-6 col-xl-3">
+          <div class="contact-card">
+            <div>
+              <h3>Адрес</h3>
+              <p id="contact-address">г. Москва, Учебный переулок, д. 12, офис 305</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-xl-3">
+          <div class="contact-card">
+            <div>
+              <h3>Телефон</h3>
+              <p><a href="tel:+74950001234">+7 (495) 000-12-34</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-xl-3">
+          <div class="contact-card">
+            <div>
+              <h3>E-mail</h3>
+              <p><a href="mailto:hello@slovo-school.example">hello@slovo-school.example</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-xl-3">
+          <div class="contact-card">
+            <div>
+              <h3>Часы работы</h3>
+              <p>Пн–Пт 10:00–20:00<br>Сб 11:00–16:00, Вс — выходной</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="map-title">
+      <div class="d-flex flex-wrap justify-content-between align-items-end gap-2 mb-3">
+        <div>
+          <h2 class="section__title mb-1" id="map-title">Как нас найти</h2>
+          <p class="text-muted mb-0">От станции метро «Пушкинская» — 7 минут пешком (около 600 м). Вход со двора, домофон 305.</p>
+        </div>
+      </div>
+      <div class="map-panel">
+        <div class="map-panel__toolbar">
+          <div class="d-flex flex-wrap gap-2" role="group" aria-label="Что показать на карте">
+            <button class="btn btn-primary btn-sm" type="button" data-map-action="office" aria-pressed="true">Офис школы</button>
+            <button class="btn btn-outline-primary btn-sm" type="button" data-map-action="metro" aria-pressed="false">Метро «Пушкинская»</button>
+            <button class="btn btn-outline-primary btn-sm" type="button" data-map-action="route" aria-pressed="false">Путь от метро</button>
+          </div>
+          <div class="map-zoom ms-sm-auto" role="group" aria-label="Масштаб карты">
+            <button class="btn btn-outline-primary btn-sm" type="button" data-map-zoom="-1" aria-label="Уменьшить масштаб">−</button>
+            <span class="map-zoom__level" id="map-zoom-level" aria-live="polite">Масштаб 16</span>
+            <button class="btn btn-outline-primary btn-sm" type="button" data-map-zoom="1" aria-label="Увеличить масштаб">+</button>
+          </div>
+        </div>
+        <div class="map-wrap">
+          <div class="map" id="map" tabindex="0" role="region" aria-label="Интерактивная карта: офис школы «Слово» и станция метро «Пушкинская»" aria-describedby="map-help">
+            <p class="map__status" id="map-status">Загружаем карту…</p>
+          </div>
+        </div>
+        <p class="map-help" id="map-help">
+          Карту можно двигать мышью или пальцем. Масштаб — кнопками «+» и «−», колесом мыши после щелчка по карте
+          или клавишами <kbd>+</kbd> / <kbd>−</kbd>; стрелки сдвигают карту, когда она в фокусе.
+          <a href="https://yandex.ru/maps/?rtext=55.765747%2C37.603900~55.761585%2C37.609946&amp;rtt=pd" target="_blank" rel="noopener">Построить маршрут в Яндекс Картах<span class="visually-hidden"> (откроется в новой вкладке)</span></a>
+        </p>
+      </div>
+      <p class="small text-muted mt-2 mb-0">Адрес условный: сайт сделан как учебный проект. Карта: API Яндекс Карт.</p>
+    </section>
+
+    <section class="section" aria-labelledby="feedback-title">
+      <div class="row g-4">
+        <div class="col-12 col-lg-5">
+          <h2 class="section__title" id="feedback-title">Напишите нам</h2>
+          <p class="text-muted">Ответим на вопросы о курсах, оплате и документах для учёбы в России. Обычно отвечаем в течение рабочего дня.</p>
+          <ul class="checklist mb-0">
+            <li>Подберём курс и группу по уровню</li>
+            <li>Расскажем про подготовку к ТРКИ</li>
+            <li>Поможем с документами для вуза</li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-7">
+          <div class="form-panel">
+            <form class="needs-validation" id="contact-form" action="#" method="post" novalidate>
+              <p class="form-hint">Поля со звёздочкой (*) обязательны.</p>
+              <div class="row g-3">
+                <div class="col-12 col-md-6">
+                  <label for="contact-name" class="form-label">Имя *</label>
+                  <input id="contact-name" name="name" type="text" class="form-control" autocomplete="name" minlength="2" required>
+                  <div class="invalid-feedback">Введите имя (не короче 2 символов).</div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <label for="contact-email" class="form-label">E-mail *</label>
+                  <input id="contact-email" name="email" type="email" class="form-control" autocomplete="email" required>
+                  <div class="invalid-feedback">Введите корректный e-mail, например name@mail.ru.</div>
+                </div>
+                <div class="col-12">
+                  <label for="contact-topic" class="form-label">Тема обращения</label>
+                  <select id="contact-topic" name="topic" class="form-select">
+                    <option value="course" selected>Выбор курса</option>
+                    <option value="trki">Подготовка к ТРКИ</option>
+                    <option value="payment">Оплата и документы</option>
+                    <option value="other">Другое</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label for="contact-message" class="form-label">Сообщение *</label>
+                  <textarea id="contact-message" name="message" class="form-control" rows="5" minlength="10" required aria-describedby="contact-message-hint"></textarea>
+                  <div class="form-hint mt-1" id="contact-message-hint">Минимум 10 символов.</div>
+                  <div class="invalid-feedback">Напишите сообщение (минимум 10 символов).</div>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input id="contact-agree" name="agree" class="form-check-input" type="checkbox" required>
+                    <label class="form-check-label" for="contact-agree">Я согласен на обработку персональных данных *</label>
+                    <div class="invalid-feedback">Без согласия сообщение отправить нельзя.</div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary btn-lg" type="submit">Отправить сообщение</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4 py-5">
+        <div class="col-12 col-lg-4">
+          <a class="brand brand--light text-decoration-none mb-3" href="index.html">
+            <span class="brand__mark" aria-hidden="true">С</span>
+            <span class="brand__text"><span class="brand__name">Сло́во</span><span class="brand__sub">онлайн-школа русского языка</span></span>
+          </a>
+          <p class="site-footer__text mb-3">
+            Русский язык для иностранных студентов: от алфавита до ТРКИ и учёбы в российском вузе.
+            Мини-группы до 8 человек и преподаватели РКИ.
+          </p>
+          <ul class="list-unstyled mb-0 site-footer__list">
+            <li><a href="https://t.me/" target="_blank" rel="noopener">Telegram<span class="visually-hidden"> (откроется в новой вкладке)</span></a></li>
+            <li><a href="https://vk.com/" target="_blank" rel="noopener">ВКонтакте<span class="visually-hidden"> (откроется в новой вкладке)</span></a></li>
+          </ul>
+        </div>
+        <nav class="col-6 col-lg-2" aria-label="Обучение">
+          <h2 class="site-footer__title">Обучение</h2>
+          <ul class="list-unstyled site-footer__list">
+            <li><a href="catalog.html">Все курсы</a></li>
+            <li><a href="product.html?id=a1">Русский с нуля</a></li>
+            <li><a href="product.html?id=b1">Подготовка к ТРКИ</a></li>
+            <li><a href="product.html?id=club">Разговорный клуб</a></li>
+          </ul>
+        </nav>
+        <nav class="col-6 col-lg-2" aria-label="О школе">
+          <h2 class="site-footer__title">Школа</h2>
+          <ul class="list-unstyled site-footer__list">
+            <li><a href="teachers.html">Преподаватели</a></li>
+            <li><a href="test.html">Тест на уровень</a></li>
+            <li><a href="order.html">Запись на курс</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="col-12 col-lg-4">
+          <h2 class="site-footer__title">Контакты</h2>
+          <address class="site-footer__list mb-0">
+            <p class="mb-2">г. Москва, Учебный переулок, д. 12, офис 305<br><span class="site-footer__muted">м. Пушкинская, 7 минут пешком</span></p>
+            <p class="mb-2"><a href="tel:+74950001234">+7 (495) 000-12-34</a></p>
+            <p class="mb-2"><a href="mailto:hello@slovo-school.example">hello@slovo-school.example</a></p>
+            <p class="mb-0 site-footer__muted">Пн–Пт 10:00–20:00, Сб 11:00–16:00</p>
+          </address>
+        </div>
+      </div>
+      <div class="site-footer__bottom d-flex flex-column flex-md-row justify-content-between gap-2 py-3">
+        <p class="mb-0">&copy; 2026 Онлайн-школа «Слово». Учебный проект, Нгуен Динь Зьен, ЭФБО-07-25.</p>
+        <p class="mb-0 site-footer__muted">Адрес, телефон и почта условные.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div class="toast text-bg-success border-0" id="success-toast" role="status" aria-live="polite" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body">Сообщение отправлено. Мы ответим в течение рабочего дня.</div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Закрыть"></button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
